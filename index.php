@@ -158,9 +158,11 @@
             </div>
             <div class="col-lg-5 offset-1">
                 <div class="after-before-img">
-                    <div class="twentytwenty-container">
-                        <img src="assets/images/clipping-Path.jpg" alt="">
-                        <img src="assets/images/clipping-Path22.jpg" alt="">
+                    <div class="beforeafterautoslide">
+                        <div data-type="data-type-image">
+                            <div data-type="before"><img src="assets/images/clipping-Path.jpg" alt=""></div>
+                            <div data-type="after"><img src="assets/images/clipping-Path22.jpg" alt=""></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,9 +170,11 @@
         <div class="row ic-mt-60 align-items-center">
             <div class="col-lg-5">
                 <div class="after-before-img">
-                    <div class="twentytwenty-container">
-                        <img src="assets/images/clipping-Path.jpg" alt="">
-                        <img src="assets/images/clipping-Path22.jpg" alt="">
+                    <div class="beforeafterautoslide">
+                        <div data-type="data-type-image">
+                            <div data-type="before"><img src="assets/images/clipping-Path.jpg" alt=""></div>
+                            <div data-type="after"><img src="assets/images/clipping-Path22.jpg" alt=""></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -222,9 +226,11 @@
             </div>
             <div class="col-lg-5 offset-1">
                 <div class="after-before-img">
-                    <div class="twentytwenty-container">
-                        <img src="assets/images/clipping-Path.jpg" alt="">
-                        <img src="assets/images/clipping-Path22.jpg" alt="">
+                    <div class="beforeafterautoslide">
+                        <div data-type="data-type-image">
+                            <div data-type="before"><img src="assets/images/clipping-Path.jpg" alt=""></div>
+                            <div data-type="after"><img src="assets/images/clipping-Path22.jpg" alt=""></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -232,9 +238,11 @@
         <div class="row ic-mt-60 align-items-center">
             <div class="col-lg-5">
                 <div class="after-before-img">
-                    <div class="twentytwenty-container">
-                        <img src="assets/images/clipping-Path.jpg" alt="">
-                        <img src="assets/images/clipping-Path22.jpg" alt="">
+                    <div class="beforeafterautoslide">
+                        <div data-type="data-type-image">
+                            <div data-type="before"><img src="assets/images/clipping-Path.jpg" alt=""></div>
+                            <div data-type="after"><img src="assets/images/clipping-Path22.jpg" alt=""></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -286,9 +294,11 @@
             </div>
             <div class="col-lg-5 offset-1">
                 <div class="after-before-img">
-                    <div class="twentytwenty-container">
-                        <img src="assets/images/clipping-Path.jpg" alt="">
-                        <img src="assets/images/clipping-Path22.jpg" alt="">
+                    <div class="beforeafterautoslide">
+                        <div data-type="data-type-image">
+                            <div data-type="before"><img src="assets/images/clipping-Path.jpg" alt=""></div>
+                            <div data-type="after"><img src="assets/images/clipping-Path22.jpg" alt=""></div>
+                        </div>
                     </div>
                 </div>
             </div>
