@@ -1,0 +1,60 @@
+.ic-btn {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    font-family: Livvic, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: .07em;
+    -webkit-box-shadow: 0 12px 30px rgba(44, 27, 154, 0.205);
+    box-shadow: 0 12px 30px rgba(44, 27, 154, 0.157);
+    border-radius: 8px;
+    padding: 18px 32px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #67b6f4;
+    -webkit-transition: background-color .3s, color .3s;
+    transition: background-color .3s, color .3s;
+
+
+    &:hover {
+        color: #fff;
+        background-color: #9d91f5;
+    }
+}
+
+.border-btn {
+    padding: 0 40px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    line-height: 48px;
+    background-color: transparent;
+    border-radius: 130px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .2s ease-in;
+    border: 1px solid #2264ad;
+    box-sizing: border-box;
+    color: #2264ad;
+    display: inline-block;
+
+    &:hover {
+        background: #2264ad;
+        color: #fff;
+    }
+}
+
+.ic-button-submit {
+    background: #3F51BF;
+    height: 50px;
+    line-height: 46px;
+    padding: 0 40px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
+
+
+}

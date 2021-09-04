@@ -1,0 +1,28 @@
+.ms-susbcribe-head {
+    background: #212121;
+
+    .ms-subscribe-heading {
+        h1 {
+            color: #fff;
+            font-weight: 900;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}
+
+.ms-form-group {
+    .form-group {
+        margin-bottom: 0;
+
+        label {
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+}

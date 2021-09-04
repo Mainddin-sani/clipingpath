@@ -1,0 +1,147 @@
+/* ===========================================
+=================== banner part ==============
+=============================================*/
+.ic-banner-head {
+    background: #F8F6FA;
+    position: relative;
+    .ic-banner-text {
+        padding-top:  114px;
+        padding-bottom: 114px;
+        h1 {
+            padding-bottom: 25px;
+        }
+        h4 {
+            padding-bottom: 40px;
+            font-weight: 300;
+            strong {
+                font-weight: 600;
+            }
+        }
+    }
+    
+    .ic-banner-img {
+        img {
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    .owl-carousel {
+        .owl-item {
+            img {
+                display: block;
+                width: auto;
+            }
+        }
+    }
+
+    // .owl-dots {
+    //     position: absolute;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    //     left: 80px;
+
+    //     .owl-dot {
+    //         .pagi-btn {
+    //             background: transparent;
+    //             // color: $color-blue;
+    //             border: none;
+    //             position: relative;
+    //             padding-left: 30px;
+    //             margin-bottom: 14px;
+
+    //             &::after {
+    //                 position: absolute;
+    //                 content: '';
+    //                 width: 20px;
+    //                 height: 20px;
+    //                 left: 0;
+    //                 @include bd-radius(50%);
+    //                 // background: $color-gray;
+
+    //             }
+
+    //             span {
+    //                 opacity: 0;
+    //                 // color: $color-blue;
+    //             }
+    //         }
+
+    //         &.active {
+    //             .pagi-btn {
+
+    //                 span {
+    //                     opacity: 1;
+    //                 }
+
+    //                 &::after {
+    //                     // background: $color-blue;
+
+    //                 }
+    //             }
+    //         }
+
+    //     }
+    // }
+
+    // .owl-stage-outer {
+    //     .owl-stage {
+    //         .owl-item {
+    //             &.active {
+    //                 .ic-banner-text {
+    //                     h1 {
+    //                         -webkit-animation-duration: 1s;
+    //                         animation-duration: 1s;
+    //                         -webkit-animation-fill-mode: both;
+    //                         animation-fill-mode: both;
+    //                         animation-name: fadeInDown;
+    //                         animation-delay: 0.3s;
+    //                     }
+
+    //                     a {
+    //                         -webkit-animation-duration: 1.3s;
+    //                         animation-duration: 1.3s;
+    //                         -webkit-animation-fill-mode: both;
+    //                         animation-fill-mode: both;
+    //                         animation-name: fadeInUp;
+    //                         animation-delay: 0.3s;
+    //                     }
+
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    // .owl-nav {
+
+
+    //     button {
+    //         position: absolute;
+    //         top: 50%;
+    //         transform: translateY(-50%);
+
+    //         &:focus {
+    //             outline: 0;
+    //         }
+
+    //         i {
+    //             font-size: 64px;
+    //             color: #fff;
+    //             transition: .3s;
+
+    //             &:hover {
+    //                 color: $main-color;
+    //             }
+    //         }
+
+    //         &.owl-next {
+    //             right: 10%;
+    //         }
+
+    //         &.owl-prev {
+    //             left: 10%;
+    //         }
+    //     }
+    // }
+}

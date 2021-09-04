@@ -1,0 +1,125 @@
+/* =================== footer css ==============*/
+
+
+.ic-footer-link {
+    h6 {
+        font-size: 14px;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+
+    img {
+        margin-bottom: 10px;
+    }
+
+    ul {
+        li {
+            padding-bottom: 10px;
+
+            a {
+                display: block;
+            }
+        }
+    }
+}
+
+.ms-social-link {
+    text-align: right;
+
+    ul {
+        background: #f6f7f8;
+        display: inline-block;
+        border-radius: 3px;
+        padding: 0 10px;
+
+
+        li {
+            display: inline-block;
+
+            a {
+                i {
+                    font-size: 14px;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    text-align: center;
+                    display: inline-block;
+                    float: none;
+                    color: #323232;
+                    -webkit-transition: all .5s ease-out 0;
+                    -moz-transition: all .5s ease-out 0;
+                    -ms-transition: all .5s ease-out 0;
+                    -o-transition: all .5s ease-out 0;
+                    transition: all .5s ease-out 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+.ic-copyright-text {
+    p {
+        color: #000;
+
+        span {
+            color: $main-color
+        }
+    }
+}
+
+.ic-last-footer {
+    background: #F7F7F7;
+    padding: 20px 0;
+}
+
+.ic-footer-link-last-footer {
+    ul {
+        li {
+            display: inline-block;
+            padding: 0 8px;
+
+            &:not(:last-child) {
+                border-right: 1px solid #000;
+            }
+
+            a {
+                font-size: 14px;
+
+                &:hover {
+                    i {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ic-back-to-top {
+    position: fixed;
+    right: 20px;
+    z-index: 99;
+    width: 60px;
+    height: 60px;
+    @include bd-radius(50%);
+    line-height: 60px;
+    text-align: center;
+    background: $gray-light;
+    box-shadow: 0px 11px 80px rgba(23, 24, 25, 0.07), 0px 1.37737px 10.0172px rgba(23, 24, 25, 0.035);
+    display: block;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background: $main-color;
+    }
+
+    i {
+
+        font-size: 43px;
+        line-height: 88px;
+
+    }
+}

@@ -1,0 +1,134 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@import './variable';
+
+/**Fonts**/
+
+
+/**Font Size & Font Family**/
+
+body {
+    font-family: 'Livvic', sans-serif;
+    color: #2b1b9a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    font-family: 'Livvic', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+    color: #2b1b9a;
+    font-size: 48px;
+    line-height: 54px;
+}
+
+h2 {
+    font-size: 52px;
+    line-height: 120%;
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 120%;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 120%;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
+ul {
+    margin: 0px;
+    padding: 0px;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: unset;
+        text-decoration: none;
+    }
+}
+
+
+p,
+a,
+span,
+label {
+    margin: 0px;
+    font-size: 16px;
+    line-height: 150%;
+    font-family: 'Livvic', sans-serif;
+    color: #000;
+}
+
+button {
+    font-size: 16px;
+    line-height: 120%;
+    font-family: 'Livvic', sans-serif;
+}
+
+
+input {
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        font-size: 16px;
+        font-family: 'Livvic', sans-serif;
+    }
+}
+
+.ic-section-heading {
+    text-align: center;
+    padding-bottom: 44px;
+
+    h2 {
+        color: $main-color;
+
+        span {
+            font-family: 'Livvic', sans-serif;
+            font-size: 52px;
+            line-height: 120%;
+            color: $light-black;
+        }
+    }
+}
+
+.form-control {
+    background: $gray;
+    height: 50px;
+    border: none;
+
+    &:focus {
+        box-shadow: none;
+        background: $gray;
+    }
+}

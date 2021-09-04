@@ -1,0 +1,136 @@
+.section-heading {
+    h2 {
+        font-weight: 900;
+        padding-bottom: 10px;
+    }
+
+    p {
+        padding: 0 100px;
+    }
+}
+
+.cliping-path-heading {
+    h3 {
+        font-size: 44px;
+        margin-bottom: 20px;
+        line-height: 50px;
+        font-weight: 900;
+    }
+}
+
+.after-before-img {
+    box-shadow: 0 0 62px 0 rgba(0, 21, 106, 0.116);
+}
+
+.twentytwenty-handle {
+    background: #000;
+}
+
+.ms-check {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    li {
+        position: relative;
+        padding-bottom: 8px;
+
+        p {
+            img {
+                max-width: 25px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.ms-about-king {
+    .row {
+        flex-wrap: nowrap;
+
+        .border-card {
+            border: 1px solid #000;
+            border-radius: 10px;
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+
+.ms-about-text {
+    padding: 20px;
+
+    p {
+        padding-bottom: 15px;
+    }
+}
+
+.ms-card-heading {
+    h3 {
+        padding-bottom: 20px;
+        font-size: 32px;
+    }
+
+
+}
+
+.ms-info {
+    margin-bottom: 40px;
+
+    .ms-card-circle {
+        i {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            line-height: 80px;
+            text-align: center;
+            font-size: 30px;
+            background: #24a098;
+            color: #fff;
+            display: inline-block;
+            transition: all .3s;
+
+            &:hover {
+                background: #CD2122;
+            }
+        }
+    }
+
+    .media-body {
+        margin-left: 20px;
+
+        h5 {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.ms-slider-work {
+    background: #F6F6F6;
+
+    .owl-dots {
+        margin-top: 30px;
+        text-align: center;
+
+        button {
+            width: 10px;
+            height: 10px;
+            background: #A2BCD9;
+            border-radius: 50%;
+            margin: 3px;
+
+            &:focus {
+                outline: 0;
+            }
+
+            &.owl-dot {
+                &.active {
+                    background: #2264AD;
+                }
+            }
+        }
+    }
+}

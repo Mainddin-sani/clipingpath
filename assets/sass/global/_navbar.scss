@@ -1,0 +1,113 @@
+/* ================= navbar css ===============*/
+#header {
+    height: 80px;
+    line-height: 69px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #fff;
+    -webkit-box-shadow: 10px 22px 60px rgba(44, 27, 154, 0.055);
+    box-shadow: 10px 22px 60px rgba(44, 27, 154, 0.048);
+    -webkit-transition: background-color 1s,-webkit-box-shadow 1s;
+    transition: background-color 1s,-webkit-box-shadow 1s;
+    transition: background-color 1s,box-shadow 1s;
+    transition: background-color 1s,box-shadow 1s,-webkit-box-shadow 1s;
+}
+.navbar {
+    padding: 0;
+    .navbar-nav {
+        .nav-item {
+            a {
+                padding: 20px 20px;
+                height: 16px;
+                -webkit-box-sizing: content-box;
+                box-sizing: content-box;
+                -webkit-transition: all .3s;
+                transition: all .3s;
+                font-weight: 700;
+                position: relative;
+                font-size: 13px;
+                color: #958dcc;
+                text-transform: uppercase;
+            }
+        }
+    }
+    #menu-button {  
+        li {
+            display: inline-block;
+            &:not(:last-child){
+                padding-right: 20px;
+            }
+            a {
+                display: inline-block;
+                cursor: pointer;
+                border: none;
+                outline: 0;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
+                letter-spacing: .07em;
+                -webkit-box-shadow: 0 12px 30px rgba(44, 27, 154, 0.205);
+                box-shadow: 0 12px 30px rgba(44, 27, 154, 0.157);
+                border-radius: 8px;
+                padding: 18px 32px;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: #67b6f4;
+                -webkit-transition: background-color .3s,color .3s;
+                transition: background-color .3s,color .3s;
+            }
+            .currency-picker__wrapper {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+                cursor: auto;
+                display: inline-block;
+                cursor: pointer;
+                border: none;
+                outline: 0;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
+                letter-spacing: .07em;
+                -webkit-box-shadow: 0 12px 30px rgba(44, 27, 154, 0.089);
+                box-shadow: 0 12px 30px rgba(44, 27, 154, 0.062);
+                border-radius: 8px;
+                padding: 18px 32px;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: #67b6f4;
+                -webkit-transition: background-color .3s,color .3s;
+                transition: background-color .3s,color .3s;
+                color: #2b1b9a;
+                background-color: #fff;
+            }
+            .currency-picker {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                border: none;
+                background: 0 0;
+                font-size: inherit;
+                font-family: inherit;
+                font-weight: inherit;
+                color: inherit;
+                padding: 10px 5px;
+                margin: -10px 0 -10px 5px;
+                outline: 0!important;
+                cursor: pointer;
+            }
+        }
+    }
+}
