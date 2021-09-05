@@ -1295,12 +1295,44 @@ input::placeholder {
       font-weight: 300; }
       .ic-banner-head .ic-banner-text h4 strong {
         font-weight: 600; }
+  .ic-banner-head .ic-slider-items.slick-active .ic-banner-text {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: slideInLeft;
+    animation-delay: 0.3s; }
+  .ic-banner-head .ic-slider-items.slick-active .ic-banner-img {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: slideInRight;
+    animation-delay: 0.3s; }
   .ic-banner-head .ic-banner-img img {
     position: absolute;
     top: 0; }
   .ic-banner-head .owl-carousel .owl-item img {
     display: block;
     width: auto; }
+
+@keyframes slideInLeft {
+  0% {
+    transform: translate3d(-400px, 0, 0);
+    visibility: visible; }
+  to {
+    transform: translateZ(0); } }
+.slideInLeft {
+  animation-name: slideInLeft; }
+
+@keyframes slideInRight {
+  0% {
+    transform: translate3d(400px, 0, 0);
+    visibility: visible; }
+  to {
+    transform: translateZ(0); } }
+.slideInRight {
+  animation-name: slideInRight; }
 
 /* ===========================================
 =================== About part ==============

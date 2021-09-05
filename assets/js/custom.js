@@ -74,16 +74,36 @@
       Banner Slider
       ========================================*/
 
-      $('.ic-banner-slider-head').owlCarousel({
-        items: 1,
-        autoplay: false,
-        loop: true,
-        smartSpeed: 1500,
-        margin: 0,
-        nav: true,
-        dots: false,
-        navText: ["<i class='flaticon-left-arrow'>","<i class='flaticon-right-arrow'>"],
-    });
+    //   $('.ic-banner-slider-head').owlCarousel({
+    //     items: 1,
+    //     autoplay: false,
+    //     loop: true,
+    //     smartSpeed: 1500,
+    //     animateIn: 'fadeIn', // add this
+    //     animateOut: 'fadeOut', // and this
+    //     // animateIn: 'slideInLeft',
+    //     margin: 0,
+    //     nav: true,
+    //     dots: false,
+    //     // navText: ["<i class='flaticon-left-arrow'>","<i class='flaticon-right-arrow'>"],
+    // });
+//     $('.ic-banner-slider-head').owlCarousel({
+//     fade: true,
+//     items:1,
+//     margin:0,
+//     smartSpeed:450
+// });
+
+        $('.ic-banner-slider-head').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows:false,
+        });
    /*========================================
       work Slider
       ========================================*/

@@ -3,7 +3,7 @@
 
 <!-- ===================  Banner part start ==================== -->
 <section class="ic-banner-head">
-    <div class="ic-banner-slider-head owl-carousel owl-theme">
+    <div class="ic-banner-slider-head">
         <div class="ic-slider-items">
             <div class="container">
                 <div class="row">
@@ -12,7 +12,7 @@
                             <h1 class="ic-blue-text">Wake up to perfectly edited product photos
                             </h1>
                             <h4>From a simple white background to the most complex clipping paths. <strong>Get pixel perfect image editing services</strong>, whenever you need them.</h4>
-                            <a href="#" class="ic-btn">Find  a Home</a>
+                            <a href="#" class="ic-btn">Find a Home</a>
                         </div>
                     </div>
                     <div class="col-lg-5">

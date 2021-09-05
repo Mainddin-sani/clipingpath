@@ -1,151 +1,242 @@
-(function($){
 
-  $.fn.twentytwenty = function(options) {
-    var options = $.extend({
-      default_offset_pct: 0.5,
-      orientation: 'horizontal',
-      before_label: 'Before',
-      after_label: 'After',
-      no_overlay: false,
-      move_slider_on_hover: false,
-      move_with_handle_only: true,
-      click_to_move: false
+/*!
+ * Cndk.BeforeAfter.js v 0.0.2 (https://github.com/ilkerccom/cndkbeforeafter)
+ * Ilker Cindik
+ * Licensed under the MIT license
+ */
+
+$.fn.cndkbeforeafter = function(options) {
+
+    // Default settings
+    var settings = $.extend({
+        mode: "hover", /* hover,drag */
+        showText: true,
+        beforeText: "BEFORE",
+        beforeTextPosition: "bottom-left", /* top-left, top-right, bottom-left, bottom-right */
+        afterText: "AFTER",
+        afterTextPosition: "bottom-right", /* top-left, top-right, bottom-left, bottom-right */
+        seperatorWidth: "4px",
+        seperatorOpacity: "0.8",
+        theme: "light", /* light,dark  */
+        autoSliding: false,
+        autoSlidingStopOnHover: true,
+        hoverEffect: true,
+        enterAnimation: false
     }, options);
 
-    return this.each(function() {
+    // This
+    var element = this;
 
-      var sliderPct = options.default_offset_pct;
-      var container = $(this);
-      var sliderOrientation = options.orientation;
-      var beforeDirection = (sliderOrientation === 'vertical') ? 'down' : 'left';
-      var afterDirection = (sliderOrientation === 'vertical') ? 'up' : 'right';
+    // Wait for image(s) loading
+    var img = new Image();
+    img.src = $(this).find(">div").eq(0).find('div[data-type="before"] img').attr("src"); 
+    img.onload = function() {
+        runCndkBeforeAfter(element);
+    };
 
+    // Run Plugin
+    function runCndkBeforeAfter(element)
+    {
+        element.each(function() { 
 
-      container.wrap("<div class='twentytwenty-wrapper twentytwenty-" + sliderOrientation + "'></div>");
-      if(!options.no_overlay) {
-        container.append("<div class='twentytwenty-overlay'></div>");
-        var overlay = container.find(".twentytwenty-overlay");
-        overlay.append("<div class='twentytwenty-before-label' data-content='"+options.before_label+"'></div>");
-        overlay.append("<div class='twentytwenty-after-label' data-content='"+options.after_label+"'></div>");
-      }
-      var beforeImg = container.find("img:first");
-      var afterImg = container.find("img:last");
-      container.append("<div class='twentytwenty-handle'></div>");
-      var slider = container.find(".twentytwenty-handle");
-      slider.append("<span class='twentytwenty-" + beforeDirection + "-arrow'></span>");
-      slider.append("<span class='twentytwenty-" + afterDirection + "-arrow'></span>");
-      container.addClass("twentytwenty-container");
-      beforeImg.addClass("twentytwenty-before");
-      afterImg.addClass("twentytwenty-after");
-      
-      var calcOffset = function(dimensionPct) {
-        var w = beforeImg.width();
-        var h = beforeImg.height();
-        return {
-          w: w+"px",
-          h: h+"px",
-          cw: (dimensionPct*w)+"px",
-          ch: (dimensionPct*h)+"px"
-        };
-      };
+            // Get contents
+            var count = $(this).find(">div>div").length;
+            if(count <= 1)
+            {
+                // No images
+                console.log("(cndk.beforeafter.js) Error -> No before-after images found.");
+            }
 
-      var adjustContainer = function(offset) {
-      	if (sliderOrientation === 'vertical') {
-          beforeImg.css("clip", "rect(0,"+offset.w+","+offset.ch+",0)");
-          afterImg.css("clip", "rect("+offset.ch+","+offset.w+","+offset.h+",0)");
-      	}
-      	else {
-          beforeImg.css("clip", "rect(0,"+offset.cw+","+offset.h+",0)");
-          afterImg.css("clip", "rect(0,"+offset.w+","+offset.h+","+offset.cw+")");
-    	}
-        container.css("height", offset.h);
-      };
+            // Add theme class
+            element.addClass("cndkbeforeafter-theme-"+settings.theme);
 
-      var adjustSlider = function(pct) {
-        var offset = calcOffset(pct);
-        slider.css((sliderOrientation==="vertical") ? "top" : "left", (sliderOrientation==="vertical") ? offset.ch : offset.cw);
-        adjustContainer(offset);
-      };
+            // Continue
+            var root = $(this);
+            root.addClass("cndkbeforeafter cndkbeforeafter-root");
+            root.append("<div class='cndkbeforeafter-seperator' style='width:"+settings.seperatorWidth+";opacity:"+settings.seperatorOpacity+"'></div>");
 
-      // Return the number specified or the min/max number if it outside the range given.
-      var minMaxNumber = function(num, min, max) {
-        return Math.max(min, Math.min(max, num));
-      };
+            // Container
+            root.append("<div class='cndkbeforeafter-container'></div>");
 
-      // Calculate the slider percentage based on the position.
-      var getSliderPercentage = function(positionX, positionY) {
-        var sliderPercentage = (sliderOrientation === 'vertical') ?
-          (positionY-offsetY)/imgHeight :
-          (positionX-offsetX)/imgWidth;
+            // Hover Effect
+            if(settings.hoverEffect == true)
+            {
+                root.addClass("cndkbeforeafter-hover");
+            }
 
-        return minMaxNumber(sliderPercentage, 0, 1);
-      };
+            // Before-After text
+            if(settings.showText == true)
+            {
+                var dataBeforeTitle = $(this).find(">div").eq(0).find('div[data-type="before"]').attr("data-title") == undefined ? settings.beforeText : $(this).find(">div").eq(0).find('div[data-type="before"]').attr("data-title");
+                var dataAfterTitle = $(this).find(">div").eq(0).find('div[data-type="after"]').attr("data-title") == undefined ? settings.afterText : $(this).find(">div").eq(0).find('div[data-type="after"]').attr("data-title");
+                root.append("<div class='cndkbeforeafter-item-before-text cndkbeforeafter-"+settings.beforeTextPosition+"'>"+dataBeforeTitle+"</div>");
+                root.append("<div class='cndkbeforeafter-item-after-text cndkbeforeafter-"+settings.afterTextPosition+"'>"+dataAfterTitle+"</div>");
+            }
 
+            for(i=0; i<count; i++)
+            {
+                // Before
+                var div1 = $(this).find(">div").eq(i).find('div[data-type="before"]');
+                var img1 = $(this).find(">div").eq(i).find('div[data-type="before"] img');
+                img1.addClass("cndkbeforeafter-item-before");
+                div1.addClass("cndkbeforeafter-item-before-c");
+                div1.css("overflow","hidden");
+                div1.css("z-index","2");
 
-      $(window).on("resize.twentytwenty", function(e) {
-        adjustSlider(sliderPct);
-      });
+                // After
+                var div2 = $(this).find(">div").eq(i).find('div[data-type="after"]');
+                var img2 = $(this).find(">div").eq(i).find('div[data-type="after"] img');
+                img2.addClass("cndkbeforeafter-item-after");
+                div2.addClass("cndkbeforeafter-item-after-c");
+                div2.css("z-index","1");
 
-      var offsetX = 0;
-      var offsetY = 0;
-      var imgWidth = 0;
-      var imgHeight = 0;
-      var onMoveStart = function(e) {
-        if (((e.distX > e.distY && e.distX < -e.distY) || (e.distX < e.distY && e.distX > -e.distY)) && sliderOrientation !== 'vertical') {
-          e.preventDefault();
-        }
-        else if (((e.distX < e.distY && e.distX < -e.distY) || (e.distX > e.distY && e.distX > -e.distY)) && sliderOrientation === 'vertical') {
-          e.preventDefault();
-        }
-        container.addClass("active");
-        offsetX = container.offset().left;
-        offsetY = container.offset().top;
-        imgWidth = beforeImg.width(); 
-        imgHeight = beforeImg.height();          
-      };
-      var onMove = function(e) {
-        if (container.hasClass("active")) {
-          sliderPct = getSliderPercentage(e.pageX, e.pageY);
-          adjustSlider(sliderPct);
-        }
-      };
-      var onMoveEnd = function() {
-          container.removeClass("active");
-      };
+                // Image-Item width/height
+                var itemwidth = img1.width();
+                var itemheight = img1.height();
 
-      var moveTarget = options.move_with_handle_only ? slider : container;
-      moveTarget.on("movestart",onMoveStart);
-      moveTarget.on("move",onMove);
-      moveTarget.on("moveend",onMoveEnd);
+                // Screen width
+                var screenWidth = $(this).parent().width();
+                if(screenWidth < itemwidth)
+                {
+                    itemheight = itemheight/(itemwidth/screenWidth);
+                    itemwidth = screenWidth;
+                    console.log(itemwidth);
+                    img1.css("width", itemwidth + "px");
+                    img2.css("width", itemwidth + "px");
+                }
 
-      if (options.move_slider_on_hover) {
-        container.on("mouseenter", onMoveStart);
-        container.on("mousemove", onMove);
-        container.on("mouseleave", onMoveEnd);
-      }
+                // Item
+                $(this).find(">div").eq(0).addClass("cndkbeforeafter-item");
+                $(this).find(">div").eq(0).css("height",itemheight + "px");
 
-      slider.on("touchmove", function(e) {
-        e.preventDefault();
-      });
+                // Small Before-After text
+                if(itemwidth < 200)
+                {
+                    $(this).find(".cndkbeforeafter-item-after-text").addClass("cndkbeforeafter-extra-small-text cndkbeforeafter-extra-small-text-after");
+                    $(this).find(".cndkbeforeafter-item-before-text").addClass("cndkbeforeafter-extra-small-text cndkbeforeafter-extra-small-text-before");
+                }
 
-      container.find("img").on("mousedown", function(event) {
-        event.preventDefault();
-      });
+                // Start position
+                div1.css("width","50%");
+                div2.css("width","50%");
+                $(".cndkbeforeafter-seperator").css("left","50%");
 
-      if (options.click_to_move) {
-        container.on('click', function(e) {
-          offsetX = container.offset().left;
-          offsetY = container.offset().top;
-          imgWidth = beforeImg.width();
-          imgHeight = beforeImg.height();
+                // Root inline
+                root.css("width",itemwidth + "px");
+                root.css("height",itemheight + "px");
+            }
 
-          sliderPct = getSliderPercentage(e.pageX, e.pageY);
-          adjustSlider(sliderPct);
+            // Modes
+            if(settings.mode == "hover")
+            {
+                // Hover mode
+                $(root).find(".cndkbeforeafter-seperator, .cndkbeforeafter-item > div").addClass("cndkbeforeafter-hover-transition");
+                $(root).mousemove(function(e){
+                    var parentOffset = $(this).offset();
+                    var mouseX = parseInt((e.pageX - parentOffset.left));
+                    var mousePercent = (mouseX*100)/parseInt(root.width());
+                    $(this).find(".cndkbeforeafter-item-before-c").css("width",mousePercent+"%");
+                    $(this).find(".cndkbeforeafter-item-after-c").css("width",(100-mousePercent)+"%");
+                    $(this).find(".cndkbeforeafter-seperator").css("left",mousePercent+"%");
+                }).mouseleave(function(){
+                    $(this).find(".cndkbeforeafter-item-after-c").css("width","50%");
+                    $(this).find(".cndkbeforeafter-item-before-c").css("width","50%");
+                    $(this).find(".cndkbeforeafter-seperator").css("left","50%");
+                });
+            }
+            else if(settings.mode == "drag")
+            {
+                // Drag mode
+                $(root).find(".cndkbeforeafter-seperator, .cndkbeforeafter-item > div").addClass("cndkbeforeafter-drag-transition");
+                $(root).click(function(e){
+                    var parentOffset = $(this).offset();
+                    var mouseX = parseInt((e.pageX - parentOffset.left));
+                    var mousePercent = (mouseX*100)/parseInt(root.width());
+                    $(this).find(".cndkbeforeafter-item-before-c").css("width",mousePercent+"%");
+                    $(this).find(".cndkbeforeafter-item-after-c").css("width",(100-mousePercent)+"%");
+                    $(this).find(".cndkbeforeafter-seperator").css("left",mousePercent+"%");
+                });
+
+                // Draggable seperator
+                var isSliding = false;
+                var currentElement = (root);
+                currentElement.find(".cndkbeforeafter-seperator").on("mousedown",function(e){
+                    isSliding = true;
+                    currentElement.find(".cndkbeforeafter-seperator, .cndkbeforeafter-item > div").removeClass("cndkbeforeafter-drag-transition");
+                    currentElement.mousemove(function(e){
+                        if(isSliding) {
+                            var parentOffset = currentElement.offset();
+                            var mouseX = parseInt((e.pageX - parentOffset.left));
+                            var mousePercent = (mouseX*100)/parseInt(root.width());
+                            currentElement.find(".cndkbeforeafter-item-before-c").css("width",mousePercent+"%");
+                            currentElement.find(".cndkbeforeafter-item-after-c").css("width",(100-mousePercent)+"%");
+                            currentElement.find(".cndkbeforeafter-seperator").css("left",mousePercent+"%");
+                        }
+                    });
+                });
+
+                // Release
+                currentElement.find(".cndkbeforeafter-seperator").on("mouseup",function(e){
+                    isSliding = false;
+                    currentElement.find(".cndkbeforeafter-seperator, .cndkbeforeafter-item > div").addClass("cndkbeforeafter-drag-transition");
+                });
+
+                // Mobile touch-support
+                currentElement.find(".cndkbeforeafter-seperator").on("touchstart",function(e){
+                    isSliding = true;
+                    currentElement.find(".cndkbeforeafter-seperator, .cndkbeforeafter-item > div").removeClass("cndkbeforeafter-drag-transition");
+                    currentElement.on("touchmove",function(e){
+                        var parentOffset = currentElement.offset();
+                        var mouseX = parseInt((e.originalEvent.touches[0].pageX - parentOffset.left));
+                        var mousePercent = (mouseX*100)/parseInt(root.width());
+                        currentElement.find(".cndkbeforeafter-item-before-c").css("width",mousePercent+"%");
+                        currentElement.find(".cndkbeforeafter-item-after-c").css("width",(100-mousePercent)+"%");
+                        currentElement.find(".cndkbeforeafter-seperator").css("left",mousePercent+"%");
+                    });
+                });
+
+                // Add visual to seperator
+                currentElement.find(".cndkbeforeafter-seperator").append("<div><span></span></div>");
+            }
+
+            // Start Animation
+            if(settings.enterAnimation)
+            {
+                $(this).addClass("cndkbeforeafter-animation");
+            }
+
+            // Auto-Sliding
+            if(settings.autoSliding)
+            {
+                $(this).attr("auto-sliding","true");
+                $(this).find(".cndkbeforeafter-item-before-c").addClass("cndkbeforeafter-animation-item-1");
+                $(this).find(".cndkbeforeafter-item-after-c").addClass("cndkbeforeafter-animation-item-2");
+                $(this).find(".cndkbeforeafter-seperator").addClass("cndkbeforeafter-animation-seperator");
+
+                if(settings.autoSlidingStopOnHover)
+                {
+                    // Stop On Enter
+                    $(this).on("mouseenter", function(){
+                        $(this).find(".cndkbeforeafter-item-before-c").removeClass("cndkbeforeafter-animation-item-1");
+                        $(this).find(".cndkbeforeafter-item-after-c").removeClass("cndkbeforeafter-animation-item-2");
+                        $(this).find(".cndkbeforeafter-seperator").removeClass("cndkbeforeafter-animation-seperator");
+                    })
+
+                    // Start On Exit
+                    $(this).on("mouseleave", function(){
+                        $(this).find(".cndkbeforeafter-item-before-c").addClass("cndkbeforeafter-animation-item-1");
+                        $(this).find(".cndkbeforeafter-item-after-c").addClass("cndkbeforeafter-animation-item-2");
+                        $(this).find(".cndkbeforeafter-seperator").addClass("cndkbeforeafter-animation-seperator");
+                    })
+                }
+            }
+
+            
+
+            // On window resize
+            $( window ).resize(function() {
+                
+            });
         });
-      }
-
-      $(window).trigger("resize.twentytwenty");
-    });
-  };
-
-})(jQuery);
+    }
+};

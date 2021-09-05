@@ -148,33 +148,36 @@
 
 <!-- <script src="assets/js/jquery-3.6.0.min.js"></script> -->
 <script src="assets/js/vendor.js"></script>
+<script src="assets/js/jquery.twentytwenty.js"></script><!-- custom js -->
+<script src="assets/js/venobox.js"></script><!-- custom js -->
 <script src="assets/js/custom.js"></script><!-- custom js -->
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyB1taAMFjjJDItj7VVzlvsTvVrixJHHNqc&callback=initMap&libraries=places"></script>
+
+<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyB1taAMFjjJDItj7VVzlvsTvVrixJHHNqc&callback=initMap&libraries=places"></script> -->
 <script>
     new WOW().init();
-    // map
-    var map;
-    var geocoder;
+    // // map
+    // var map;
+    // var geocoder;
 
-    function loadMap() {
-        // Using the lat and lng of Dehradun.
-        var latitude = '23.868209894441975';
-        var longitude = '90.41491927636815'
-        var latlng = new google.maps.LatLng(latitude, longitude);
-        var feature = {
-            zoom: 10,
-            center: latlng,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        map = new google.maps.Map(document.getElementById("map_canvas"), feature);
-        geocoder = new google.maps.Geocoder();
-        var marker = new google.maps.Marker({
-            position: latlng,
-            map: map,
-            title: "Test for Location"
-        });
+    // function loadMap() {
+    //     // Using the lat and lng of Dehradun.
+    //     var latitude = '23.868209894441975';
+    //     var longitude = '90.41491927636815'
+    //     var latlng = new google.maps.LatLng(latitude, longitude);
+    //     var feature = {
+    //         zoom: 10,
+    //         center: latlng,
+    //         mapTypeId: google.maps.MapTypeId.ROADMAP
+    //     };
+    //     map = new google.maps.Map(document.getElementById("map_canvas"), feature);
+    //     geocoder = new google.maps.Geocoder();
+    //     var marker = new google.maps.Marker({
+    //         position: latlng,
+    //         map: map,
+    //         title: "Test for Location"
+    //     });
 
-    }
+    // }
 </script>
 
 </body>
