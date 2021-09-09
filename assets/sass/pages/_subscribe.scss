@@ -1,5 +1,5 @@
 .ms-susbcribe-head {
-    background: #212121;
+    background: #d0d0d0;
 
     .ms-subscribe-heading {
         h1 {
@@ -12,6 +12,10 @@
             font-size: 24px;
             font-weight: 600;
             color: #fff;
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
         }
     }
 }
@@ -19,6 +23,10 @@
 .ms-form-group {
     .form-group {
         margin-bottom: 0;
+
+        @media (max-width: 991px) {
+            margin-bottom: 20px;
+        }
 
         label {
             color: #fff;

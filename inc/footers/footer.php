@@ -2,7 +2,7 @@
 <section class="ic-footer-main-wrap ic-pt-80 ic-pb-80">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-4 ">
                 <div class="ic-footer-link">
                     <h6>CLIPPING PATH QUICK</h6>
                     <ul>
@@ -24,7 +24,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-4 ">
                 <div class="ic-footer-link">
                     <h6>HELPS</h6>
                     <ul>
@@ -46,7 +46,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-4 ">
                 <div class="ic-footer-link">
                     <h6>TOOLS
                     </h6>
@@ -70,7 +70,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-4 ">
                 <div class="ic-footer-link">
                     <h6>ABOUT US</h6>
                     <a href="#">
@@ -150,6 +150,7 @@
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/jquery.twentytwenty.js"></script><!-- custom js -->
 <script src="assets/js/venobox.js"></script><!-- custom js -->
+<script src="assets/js/howToWork.js"></script><!-- custom js -->
 <script src="assets/js/custom.js"></script><!-- custom js -->
 
 <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyB1taAMFjjJDItj7VVzlvsTvVrixJHHNqc&callback=initMap&libraries=places"></script> -->

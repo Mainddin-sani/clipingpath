@@ -48,23 +48,48 @@
      }
  });
 
+
     /*========================================
-    Ic Mobile menu activation
+           Ic Mobile menu activation
     ========================================*/
 
-    var $navOpen = $(".offcanvas_main_menu li a");  
+        $('.ic-mobile-menu-open').on('click', function() {
+            $('.ic-mobile-menu-overlay').addClass('active')
+            $('.ic-mobile-menu-wrapper').addClass('active')
+        });
+        $('.ic-mobile-menu-overlay').on('click', function() {
+            $('.ic-mobile-menu-overlay').removeClass('active')
+            $('.ic-mobile-menu-wrapper').removeClass('active')
+        });
+        $('.ic-menu-close').on('click', function() {
+            $('.ic-mobile-menu-overlay').removeClass('active')
+            $('.ic-mobile-menu-wrapper').removeClass('active')
+        });
+     /*========================================
+        Ic Mobile Menu Toggle
+    ========================================*/
 
-    $('.ic-mobile-menu-open,.ic-mobile-menu-overlay').on('click', function () {
-        $('.ic-mobile-menu-wrapper,.ic-mobile-menu-overlay').addClass('active')
+    var $icMobileNav = $('.ic-mobile-menu'),
+        $icMobileSubMenuNav = $icMobileNav.find('.ic_sub_menu');
+    $icMobileSubMenuNav.parent().prepend('<span class="menu-expand"> <i class="icofont-plus"></i></span>');
+    $icMobileSubMenuNav.slideUp();
+    $icMobileNav.on('click', 'li a, li .menu-expand', function(e) {
+        var $this = $(this);
+        if (($this.parent().attr('class').match(/\b(ic-menu-item-has-children|has-children|has-ic_sub_menu)\b/)) && ($this.attr('href') === '#' || $this.hasClass('menu-expand'))) {
+            e.preventDefault();
+            if ($this.siblings('ul:visible').length) {
+                $this.siblings('ul').slideUp('slow');
+            } else {
+                $this.closest('li').siblings('li').find('ul:visible').slideUp('slow');
+                $this.siblings('ul').slideDown('slow');
+            }
+        }
+        if ($this.is('a') || $this.is('span') || $this.attr('clas').match(/\b(menu-expand)\b/)) {
+            $this.parent().toggleClass('menu-open');
+        } else if ($this.is('li') && $this.attr('class').match(/\b('ic-menu-item-has-children')\b/)) {
+            $this.toggleClass('menu-open');
+        }
     });
-    $('.ic-menu-close,.ic-mobile-menu-overlay').on('click', function () {
-        $('.ic-mobile-menu-wrapper,.ic-mobile-menu-overlay').removeClass('active')
-    }); 
-    // mobile menu hide in any menu click 
-    $navOpen.on('click', function(){
-        $('.ic-mobile-menu-wrapper,.ic-mobile-menu-overlay').removeClass("active");
-    }); 
-    // single page menu active  
     $(".nav-item").on("click", function(e){
         $("li.nav-item").removeClass("active");
         $(this).addClass("active");
@@ -101,8 +126,9 @@
             fade: true,
             cssEase: 'linear',
             autoplay: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 5000,
             arrows:false,
+            pauseOnHover:false,
         });
    /*========================================
       work Slider

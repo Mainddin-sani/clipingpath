@@ -2,29 +2,34 @@
 =================== About part ==============
 =============================================*/
 .banner-part-text {
-    h4  {      
-        color: $light-red;
+    h4 {
+        color: $main-text-color;
         padding-bottom: 30px;
     }
 }
+
 .edit-card {
     img {
         max-width: 90px;
     }
+
     h6 {
         color: $main-text-color;
         padding-bottom: 10px;
         font-weight: 700;
         font-size: 14px;
     }
+
     p {
         font-size: 9px;
         color: $main-text-color;
+
         .amount {
             font-size: 9px;
             color: $main-text-color;
         }
     }
+
     a {
         font-size: 9px;
         color: $main-text-color;

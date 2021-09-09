@@ -9,11 +9,15 @@
 
 <!-- navbar start -->
 
-<nav id="header" class="navbar navbar-expand-lg ic-navbar-start d-lg-block sticky-menu">
+<nav id="header" class="navbar navbar-expand-xl ic-navbar-start d-lg-block sticky-menu">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler ic-mobile-menu-open border-0 bg-transparent p-0">
+            <div class="ic-bar">
+                <div class="bar-1"></div>
+                <div class="bar-1"></div>
+                <div class="bar-1"></div>
+            </div>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -68,28 +72,42 @@
 <!-- navbar end -->
 
 <!-- mobile-nav start -->
-<div class="ic-mobile-menu-overlay">
-</div>
-
-<div class="offcanvas_menu d-block d-lg-none ic_mobile_nav_head">
-    <div class="container">
-        <div class="ic-mobile-menu-wrapper">
-            <div class="ic-menu-close">
-                <a href="javascript:void(0)"><i class="flaticon-close"></i></a>
-            </div>
-            <div id="menu" class="text-left ">
-                <ul class="offcanvas_main_menu">
-                    <li class="nav-item active"><a href="index.php">Home</a></li>
-                    <li class="nav-item"><a href="find-properties.php">Find a home</a></li>
-                    <li class="nav-item"><a href="#video-tour">virtual tours</a></li>
-                    <li class="nav-item"><a href="#floor-plan">Resident</a></li>
-                    <li class="nav-item"><a href="#location">Owner</a></li>
-                    <li class="nav-item"><a href="#contact">Vendor</a></li>
-                    <li class="nav-item"><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+<!-- mobile menu -->
+<div class="ic-mobile-menu-overlay"></div>
+<div class="ic-mobile-menu-wrapper">
+    <div class="ic-menu-close">
+        <a href="javascript:void(0)"><i class="icofont-close-circled"></i></a>
     </div>
+    <div id="menu" class="text-left ">
+        <ul class="ic-mobile-menu">
+            <li class="ic-menu-item-has-children">
+                <a href="#">Shops</a>
+                <ul class="ic_sub_menu" style="display: none;">
+                    <li class="ic-menu-item-has-children">
+                        <a href="#">Amazon</a>
+                    </li>
+                    <li class="ic-menu-item-has-children">
+                        <a href="#">Gshopper</a>
+                    </li>
+                    <li class="ic-menu-item-has-children">
+                        <a href="#">Ebay </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="ic-menu-item-has-children">
+                <a href="">Deals</a>
+            </li>
+            <li class="ic-menu-item-has-children">
+                <a href="#">Coupon</a>
+            </li>
+            <li class="ic-menu-item-has-children">
+                <a href="#">Magazin</a>
+            </li>
+        </ul>
+
+    </div>
+
 </div>
+<!-- navbar end -->
 
 <!-- mobile-nav end -->

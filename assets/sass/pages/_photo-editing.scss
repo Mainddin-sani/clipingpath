@@ -9,12 +9,34 @@
     }
 }
 
+.video-embed {
+    @media (max-width: 991px) {
+        padding-top: 30px;
+    }
+}
+
 .cliping-path-heading {
+    @media (max-width: 767px) {
+        padding-top: 20px;
+    }
+
     h3 {
         font-size: 44px;
         margin-bottom: 20px;
         line-height: 50px;
         font-weight: 900;
+
+        @media (max-width: 1440px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 1200px) {
+            font-size: 35px;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 30px;
+        }
     }
 }
 
@@ -47,12 +69,26 @@
     .row {
         flex-wrap: nowrap;
 
+        @media (max-width: 575px) {
+            flex-wrap: wrap;
+        }
+
         .border-card {
             border: 1px solid #000;
             border-radius: 10px;
 
+            @media (max-width: 767px) {
+                border: none;
+                border-radius: 0;
+            }
+
             &:not(:last-child) {
                 margin-right: 10px;
+
+                @media (max-width: 767px) {
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                }
             }
         }
     }
@@ -63,6 +99,11 @@
 .ms-about-text {
     padding: 20px;
 
+    @media (max-width: 767px) {
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+
     p {
         padding-bottom: 15px;
     }
@@ -72,6 +113,10 @@
     h3 {
         padding-bottom: 20px;
         font-size: 32px;
+
+        @media (max-width: 991px) {
+            font-size: 25px;
+        }
     }
 
 
@@ -92,6 +137,14 @@
             color: #fff;
             display: inline-block;
             transition: all .3s;
+
+            @media (max-width: 991px) {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                line-height: 50px;
+                font-size: 19px;
+            }
 
             &:hover {
                 background: #CD2122;

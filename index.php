@@ -72,35 +72,35 @@
 <section class="ic-service-card ic-pt-20 ic-pb-40">
     <div class="container">
         <div class="row">
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                 <div class="edit-card text-center">
                     <img src="assets/images/editor.svg" alt="">
                     <h6>Edited by hand</h6>
                     <p>Every edit is done by a professional retoucher, not a machine, for complete control and the cleanest edges</p>
                 </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                 <div class="edit-card text-center">
                     <img src="assets/images/researcher.svg" alt="">
                     <h6>Pixel perfect results</h6>
                     <p>Our designers can handle even the most complex cutouts — no straight polygonal lasso lines where they shouldn’t be</p>
                 </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                 <div class="edit-card text-center">
                     <img src="assets/images/support.svg" alt="">
                     <h6>24/7 support</h6>
                     <p>Your dedicated customer support team is ready to help, whenever you need us</p>
                 </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                 <div class="edit-card text-center">
                     <img src="assets/images/timer.svg" alt="">
                     <h6>Quick turnaround</h6>
                     <p>Get your images back in as little as six hours, even if you have thousands of shots to get through</p>
                 </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                 <div class="edit-card text-center">
                     <img src="assets/images/donor.svg" alt="">
                     <h6>Under budget</h6>
@@ -110,7 +110,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
                 <div class="edit-card text-center">
                     <img src="assets/images/ecommerce.svg" alt="">
                     <h6>E-commerce optimized</h6>
@@ -134,7 +134,7 @@
             </div>
         </div>
         <div class="row ic-mt-60 align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 order-lg-1 order-2">
                 <div class="cliping-path-heading">
                     <h3>Clipping Path</h3>
                     <h6><b>Get the best precise image cutting and increase sales</b></h6>
@@ -156,7 +156,7 @@
                     <a href="#" class="ic-btn">View More</a>
                 </div>
             </div>
-            <div class="col-lg-5 offset-1">
+            <div class="col-lg-5 col-md-6 offset-lg1 order-lg-2 order-1">
                 <div class="after-before-img">
                     <div class="beforeafterautoslide">
                         <div data-type="data-type-image">
@@ -168,7 +168,7 @@
             </div>
         </div>
         <div class="row ic-mt-60 align-items-center">
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-md-6">
                 <div class="after-before-img">
                     <div class="beforeafterautoslide">
                         <div data-type="data-type-image">
@@ -178,7 +178,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6  offset-1">
+            <div class="col-lg-6 col-md-6  offset-lg-1">
                 <div class="cliping-path-heading">
                     <h3>Ecommerce Image</h3>
                     <h6><b>Make product photos that generate sells</b></h6>
@@ -202,7 +202,7 @@
             </div>
         </div>
         <div class="row ic-mt-60 align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 order-lg-1 order-2">
                 <div class="cliping-path-heading">
                     <h3>Photo Retouch</h3>
                     <h6><b>Create fabulous photos that make an impact</b></h6>
@@ -224,7 +224,7 @@
                     <a href="#" class="ic-btn">View More</a>
                 </div>
             </div>
-            <div class="col-lg-5 offset-1">
+            <div class="col-lg-5 col-md-6 offset-lg-1 order-lg-2 order-1">
                 <div class="after-before-img">
                     <div class="beforeafterautoslide">
                         <div data-type="data-type-image">
@@ -236,7 +236,7 @@
             </div>
         </div>
         <div class="row ic-mt-60 align-items-center">
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-md-6">
                 <div class="after-before-img">
                     <div class="beforeafterautoslide">
                         <div data-type="data-type-image">
@@ -246,7 +246,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6  offset-1">
+            <div class="col-lg-6 col-md-6  offset-lg-1">
                 <div class="cliping-path-heading">
                     <h3>Ghost Mannequin</h3>
                     <h6><b>Get model like effect on your apparel photos</b></h6>
@@ -270,7 +270,7 @@
             </div>
         </div>
         <div class="row ic-mt-60 align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 order-lg-1 order-2">
                 <div class="cliping-path-heading">
                     <h3>Image Masking</h3>
                     <h6><b>Clipping Mask shines where clipping path fines</b></h6>
@@ -292,7 +292,7 @@
                     <a href="#" class="ic-btn">View More</a>
                 </div>
             </div>
-            <div class="col-lg-5 offset-1">
+            <div class="col-lg-5 col-md-6 offset-lg1 order-lg-2 order-1">
                 <div class="after-before-img">
                     <div class="beforeafterautoslide">
                         <div data-type="data-type-image">

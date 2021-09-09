@@ -14,13 +14,21 @@
     background-color: #fff;
     -webkit-box-shadow: 10px 22px 60px rgba(44, 27, 154, 0.055);
     box-shadow: 10px 22px 60px rgba(44, 27, 154, 0.048);
-    -webkit-transition: background-color 1s,-webkit-box-shadow 1s;
-    transition: background-color 1s,-webkit-box-shadow 1s;
-    transition: background-color 1s,box-shadow 1s;
-    transition: background-color 1s,box-shadow 1s,-webkit-box-shadow 1s;
+    -webkit-transition: background-color 1s, -webkit-box-shadow 1s;
+    transition: background-color 1s, -webkit-box-shadow 1s;
+    transition: background-color 1s, box-shadow 1s;
+    transition: background-color 1s, box-shadow 1s, -webkit-box-shadow 1s;
+
+    @media (max-width: 1200px) {
+        padding: 0 20px;
+        height: 65px;
+        line-height: 52px;
+    }
 }
+
 .navbar {
     padding: 0;
+
     .navbar-nav {
         .nav-item {
             a {
@@ -35,15 +43,20 @@
                 font-size: 13px;
                 color: #958dcc;
                 text-transform: uppercase;
+
+
             }
         }
     }
-    #menu-button {  
+
+    #menu-button {
         li {
             display: inline-block;
-            &:not(:last-child){
+
+            &:not(:last-child) {
                 padding-right: 20px;
             }
+
             a {
                 display: inline-block;
                 cursor: pointer;
@@ -60,9 +73,15 @@
                 text-transform: uppercase;
                 color: #fff;
                 background-color: #67b6f4;
-                -webkit-transition: background-color .3s,color .3s;
-                transition: background-color .3s,color .3s;
+                -webkit-transition: background-color .3s, color .3s;
+                transition: background-color .3s, color .3s;
+
+                @media (max-width: 1440px) {
+                    padding: 14px 28px;
+                    font-size: 15px;
+                }
             }
+
             .currency-picker__wrapper {
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -88,11 +107,17 @@
                 text-transform: uppercase;
                 color: #fff;
                 background-color: #67b6f4;
-                -webkit-transition: background-color .3s,color .3s;
-                transition: background-color .3s,color .3s;
+                -webkit-transition: background-color .3s, color .3s;
+                transition: background-color .3s, color .3s;
                 color: #2b1b9a;
                 background-color: #fff;
+
+                @media (max-width: 1440px) {
+                    padding: 14px 28px;
+                    font-size: 15px;
+                }
             }
+
             .currency-picker {
                 -webkit-appearance: none;
                 -moz-appearance: none;
@@ -105,7 +130,7 @@
                 color: inherit;
                 padding: 10px 5px;
                 margin: -10px 0 -10px 5px;
-                outline: 0!important;
+                outline: 0 !important;
                 cursor: pointer;
             }
         }

@@ -30,11 +30,33 @@ h1 {
     color: #2b1b9a;
     font-size: 48px;
     line-height: 54px;
+
+    @media (max-width: 991px) {
+        font-size: 34px;
+        line-height: 52px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 35px;
+        line-height: 52px;
+    }
 }
 
 h2 {
     font-size: 52px;
     line-height: 120%;
+
+    @media (max-width: 1440px) {
+        font-size: 44px;
+    }
+
+    @media (max-width: 1200px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 991px) {
+        font-size: 35px;
+    }
 }
 
 h3 {

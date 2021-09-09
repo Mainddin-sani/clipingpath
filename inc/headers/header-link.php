@@ -19,4 +19,4 @@
     <link href="assets/css/style.css" rel="stylesheet"><!-- custom Style -->
 </head>
 
-<body onload="loadMap()">
+<body>
