@@ -133,41 +133,18 @@
                 </div>
             </div>
         </div>
-        <div class="row ic-mt-60 align-items-center">
-            <div class="col-lg-6 col-md-6 order-lg-1 order-2">
-                <div class="cliping-path-heading">
-                    <h3>Clipping Path</h3>
-                    <h6><b>Get the best precise image cutting and increase sales</b></h6>
-                    <p>Through our manual hand-drawn clipping path service you get 100% accurate image cutout. Features that allow us to take every cut above the rest aren’t any unique ones but we maintain the consistency that very few do.</p>
-                    <ul class="ms-check">
-                        <li>
-                            <p> <img src="assets/images/check.svg" alt=""> Maintain 100% Accuracy</p>
-                        </li>
-                        <li>
-                            <p> <img src="assets/images/check.svg" alt=""> Customized Image Clipping</p>
-                        </li>
-                        <li>
-                            <p> <img src="assets/images/check.svg" alt=""> Fastest Delivery</p>
-                        </li>
-                        <li>
-                            <p> <img src="assets/images/check.svg" alt=""> Competitive Price</p>
-                        </li>
-                    </ul>
-                    <a href="#" class="ic-btn">View More</a>
-                </div>
-            </div>
-            <div class="col-lg-5 col-md-6 offset-lg1 order-lg-2 order-1">
-                <div class="after-before-img">
-                    <div class="beforeafterautoslide">
-                        <div data-type="data-type-image">
-                            <div data-type="before"><img src="assets/images/clipping-Path.jpg" alt=""></div>
-                            <div data-type="after"><img src="assets/images/clipping-Path22.jpg" alt=""></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row ic-mt-60 align-items-center">
+
+
+
+
+
+
+    </div>
+</section>
+
+<section class="ic-pt-60 ic-pb-60  gray-dark-light-bg">
+    <div class="container">
+        <div class="row align-items-center">
             <div class="col-lg-5 col-md-6">
                 <div class="after-before-img">
                     <div class="beforeafterautoslide">
@@ -201,7 +178,87 @@
                 </div>
             </div>
         </div>
-        <div class="row ic-mt-60 align-items-center">
+    </div>
+</section>
+<section class="ic-pt-60 ic-pb-60 ">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 order-lg-1 order-2">
+                <div class="cliping-path-heading">
+                    <h3>Clipping Path</h3>
+                    <h6><b>Get the best precise image cutting and increase sales</b></h6>
+                    <p>Through our manual hand-drawn clipping path service you get 100% accurate image cutout. Features that allow us to take every cut above the rest aren’t any unique ones but we maintain the consistency that very few do.</p>
+                    <ul class="ms-check">
+                        <li>
+                            <p> <img src="assets/images/check.svg" alt=""> Maintain 100% Accuracy</p>
+                        </li>
+                        <li>
+                            <p> <img src="assets/images/check.svg" alt=""> Customized Image Clipping</p>
+                        </li>
+                        <li>
+                            <p> <img src="assets/images/check.svg" alt=""> Fastest Delivery</p>
+                        </li>
+                        <li>
+                            <p> <img src="assets/images/check.svg" alt=""> Competitive Price</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="ic-btn">View More</a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 offset-lg1 order-lg-2 order-1">
+                <div class="after-before-img">
+                    <div class="beforeafterautoslide">
+                        <div data-type="data-type-image">
+                            <div data-type="before"><img src="assets/images/clipping-Path.jpg" alt=""></div>
+                            <div data-type="after"><img src="assets/images/clipping-Path22.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ic-pt-60 ic-pb-60  gray-dark-light-bg">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <div class="after-before-img">
+                    <div class="beforeafterautoslide">
+                        <div data-type="data-type-image">
+                            <div data-type="before"><img src="assets/images/clipping-Path.jpg" alt=""></div>
+                            <div data-type="after"><img src="assets/images/clipping-Path22.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6  offset-lg-1">
+                <div class="cliping-path-heading">
+                    <h3>Ecommerce Image</h3>
+                    <h6><b>Make product photos that generate sells</b></h6>
+                    <p>Our eCommerce product photo editing allows you to generate better product images to increase the sales. Get the best product retouching along with some advanced features for your product image.</p>
+                    <ul class="ms-check">
+                        <li>
+                            <p> <img src="assets/images/check.svg" alt=""> Understand Product Framing</p>
+                        </li>
+                        <li>
+                            <p> <img src="assets/images/check.svg" alt=""> Bulk Project Handling Experience</p>
+                        </li>
+                        <li>
+                            <p> <img src="assets/images/check.svg" alt=""> Providing Accurate White Background</p>
+                        </li>
+                        <li>
+                            <p> <img src="assets/images/check.svg" alt=""> Following Online Image Requirements</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="ic-btn">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ic-pt-60 ic-pb-60 ">
+    <div class="container">
+        <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 order-lg-1 order-2">
                 <div class="cliping-path-heading">
                     <h3>Photo Retouch</h3>
@@ -235,7 +292,11 @@
                 </div>
             </div>
         </div>
-        <div class="row ic-mt-60 align-items-center">
+    </div>
+</section>
+<section class="ic-pt-60 ic-pb-60  gray-dark-light-bg">
+    <div class="container">
+        <div class="row align-items-center">
             <div class="col-lg-5 col-md-6">
                 <div class="after-before-img">
                     <div class="beforeafterautoslide">
@@ -269,7 +330,11 @@
                 </div>
             </div>
         </div>
-        <div class="row ic-mt-60 align-items-center">
+    </div>
+</section>
+<section class="ic-pt-60 ic-pb-60 ">
+    <div class="container">
+        <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 order-lg-1 order-2">
                 <div class="cliping-path-heading">
                     <h3>Image Masking</h3>
@@ -303,11 +368,11 @@
                 </div>
             </div>
         </div>
-        <div class="ic-view-all ic-pt-60 text-center">
-            <a href="#" class="border-btn">View All Services</a>
-        </div>
     </div>
 </section>
+<div class="ic-view-all ic-pt-60 text-center">
+    <a href="#" class="border-btn">View All Services</a>
+</div>
 <!-- ===================  editing service part End ==================== -->
 
 <!-- =================== about-Cliping path part start ==================== -->

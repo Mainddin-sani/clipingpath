@@ -32,6 +32,9 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 .light-black-bg {
   background: #58595B; }
 
+.gray-dark-light-bg {
+  background: #F6F6F6; }
+
 * {
   padding: 0px;
   margin: 0px; }
@@ -60,6 +63,9 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 .light-black-bg {
   background: #58595B; }
+
+.gray-dark-light-bg {
+  background: #F6F6F6; }
 
 /**Fonts**/
 /**Font Size & Font Family**/
@@ -163,6 +169,9 @@ input::placeholder {
       line-height: 120%;
       color: #58595B; }
 
+textarea.form-control {
+  height: 150px; }
+
 .form-control {
   background: #F4F4F4;
   height: 50px;
@@ -196,6 +205,9 @@ input::placeholder {
 
 .light-black-bg {
   background: #58595B; }
+
+.gray-dark-light-bg {
+  background: #F6F6F6; }
 
 /**Default Padding**/
 .ic-inner-content {
@@ -830,6 +842,9 @@ input::placeholder {
       height: 65px;
       line-height: 52px; } }
 
+.navbar-brand img {
+  max-width: 200px; }
+
 .navbar {
   padding: 0; }
   .navbar .navbar-nav .nav-item a {
@@ -1265,6 +1280,54 @@ input::placeholder {
 .ic-service-card .col-lg-2 {
   padding: 0 10px; }
 
+.ic-about-content p {
+  padding-bottom: 20px; }
+
+.ic-our-mission {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .ic-our-mission .ic-our-missions-items {
+    background: #e6e6e6;
+    padding: 80px 40px;
+    width: 33.33%;
+    transition: .3s; }
+    @media only screen and (max-width: 991.98px) {
+      .ic-our-mission .ic-our-missions-items {
+        padding: 45px 18px; } }
+    @media only screen and (max-width: 767.98px) {
+      .ic-our-mission .ic-our-missions-items {
+        width: 50%; } }
+    @media only screen and (max-width: 575.98px) {
+      .ic-our-mission .ic-our-missions-items {
+        width: 100%; } }
+    .ic-our-mission .ic-our-missions-items h4 {
+      padding-bottom: 20px;
+      font-weight: 700; }
+    .ic-our-mission .ic-our-missions-items:nth-child(2) {
+      background: #f0f0f0; }
+      @media only screen and (max-width: 767.98px) {
+        .ic-our-mission .ic-our-missions-items:nth-child(2) {
+          width: 50%; } }
+      @media only screen and (max-width: 575.98px) {
+        .ic-our-mission .ic-our-missions-items:nth-child(2) {
+          width: 100%; } }
+    .ic-our-mission .ic-our-missions-items:nth-child(3) {
+      background: #F9F9F9; }
+      @media only screen and (max-width: 767.98px) {
+        .ic-our-mission .ic-our-missions-items:nth-child(3) {
+          width: 100%; } }
+      @media only screen and (max-width: 575.98px) {
+        .ic-our-mission .ic-our-missions-items:nth-child(3) {
+          width: 100%; } }
+    .ic-our-mission .ic-our-missions-items:hover {
+      background: #67B6F4; }
+      .ic-our-mission .ic-our-missions-items:hover h4 {
+        color: #fff; }
+      .ic-our-mission .ic-our-missions-items:hover p {
+        color: #fff; }
+
 .section-heading h2 {
   font-weight: 900;
   padding-bottom: 10px; }
@@ -1476,5 +1539,46 @@ input::placeholder {
 
 .bg-transparent-input {
   background: transparent; }
+
+.ms-contact-main {
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 22px rgba(193, 188, 188, 0.2); }
+
+.ic-contact-image {
+  margin-top: -150px; }
+  @media only screen and (max-width: 991.98px) {
+    .ic-contact-image {
+      margin-top: 50px; } }
+
+.ms-address-main {
+  padding-top: 50px;
+  padding-right: 100px; }
+  .ms-address-main ul li {
+    position: relative;
+    padding: 8px 0; }
+    .ms-address-main ul li a,
+    .ms-address-main ul li p {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-left: 40px;
+      font-weight: 500; }
+    .ms-address-main ul li i {
+      font-size: 25px;
+      position: absolute;
+      left: 0;
+      color: #2b1b9a; }
+
+.ic-social-link {
+  padding-top: 50px; }
+  .ic-social-link ul li {
+    display: inline-block; }
+    .ic-social-link ul li a {
+      font-size: 25px;
+      display: inline-block;
+      margin-right: 20px; }
 
 /*# sourceMappingURL=style.css.map */

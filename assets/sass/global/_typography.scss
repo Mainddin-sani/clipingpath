@@ -144,6 +144,10 @@ input {
     }
 }
 
+textarea.form-control {
+    height: 150px;
+}
+
 .form-control {
     background: $gray;
     height: 50px;

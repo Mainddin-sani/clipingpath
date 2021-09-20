@@ -11,7 +11,9 @@
 
 <nav id="header" class="navbar navbar-expand-xl ic-navbar-start d-lg-block sticky-menu">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="index.php">
+            <img src="assets/images/logo-img.png" alt="logo">
+        </a>
         <button class="navbar-toggler ic-mobile-menu-open border-0 bg-transparent p-0">
             <div class="ic-bar">
                 <div class="bar-1"></div>

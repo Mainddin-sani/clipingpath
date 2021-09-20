@@ -43,3 +43,73 @@
         padding: 0 10px;
     }
 }
+
+.ic-about-content {
+    p {
+        padding-bottom: 20px;
+    }
+}
+
+.ic-our-mission {
+    @include d-flex();
+
+    .ic-our-missions-items {
+        background: #e6e6e6;
+        padding: 80px 40px;
+        width: 33.33%;
+        transition: .3s;
+
+        @media #{$max991} {
+            padding: 45px 18px;
+        }
+
+        @media #{$max767} {
+            width: 50%;
+        }
+
+        @media #{$max575} {
+            width: 100%;
+        }
+
+        h4 {
+            padding-bottom: 20px;
+            font-weight: 700;
+        }
+
+        &:nth-child(2) {
+            background: #f0f0f0;
+
+            @media #{$max767} {
+                width: 50%;
+            }
+
+            @media #{$max575} {
+                width: 100%;
+            }
+        }
+
+        &:nth-child(3) {
+            background: #F9F9F9;
+
+            @media #{$max767} {
+                width: 100%;
+            }
+
+            @media #{$max575} {
+                width: 100%;
+            }
+        }
+
+        &:hover {
+            background: #67B6F4;
+
+            h4 {
+                color: #fff;
+            }
+
+            p {
+                color: #fff;
+            }
+        }
+    }
+}
