@@ -19,33 +19,36 @@
             <div class="col-lg-7">
                 <div class="ms-contact-main">
                     <h2>Get In Touch</h2>
-                    <div class="row ic-mt-30">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" placeholder="First Name">
+                    <form action="#">
+                        <div class="row ic-mt-30">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="First Name">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input type="number" name="phone" class="form-control" placeholder="Your Phone">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="number" name="phone" class="form-control" placeholder="Your Phone">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input type="text" name="companyName" class="form-control" placeholder="Company Name">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" name="companyName" class="form-control" placeholder="Company Name">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input type="email" name="email" class="form-control" placeholder="Your Email">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <textarea name="write" class="form-control" placeholder="Write your massage"></textarea>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <textarea name="write" class="form-control" placeholder="Write your massage"></textarea>
+                                </div>
                             </div>
+                            <button class="ic-btn">Submit</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div class="col-lg-5">

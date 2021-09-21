@@ -1,0 +1,62 @@
+.ic-pricing-calculate {
+    padding: 30px;
+    @include bd-radius(10px);
+    box-shadow: 0px 5px 22px rgba(193, 188, 188, .2);
+
+    @media #{$max991} {
+        margin-top: 30px;
+    }
+}
+
+.ms-pricing-main {
+    h3 {
+        padding-bottom: 20px;
+    }
+
+    p {
+        padding-bottom: 10px;
+    }
+}
+
+.ms-cliping-path-drop-shadow {
+    @include d-flex();
+    justify-content: space-around;
+    padding-top: 30px;
+
+    @media #{$max575} {
+        flex-direction: column;
+    }
+
+    .ms-cliping-path-drop-items {
+        padding: 0 30px;
+        text-align: center;
+
+        &:nth-child(2) {
+            border-right: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        @media #{$max1199} {
+            padding: 0 18px;
+        }
+
+        @media #{$max767} {
+            padding: 0 5px;
+        }
+
+        @media #{$max575} {
+            padding: 30px 0;
+
+            &:nth-child(2) {
+                border-top: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                border-right: 0;
+                border-left: 0;
+            }
+        }
+    }
+}

@@ -1581,4 +1581,52 @@ textarea.form-control {
       display: inline-block;
       margin-right: 20px; }
 
+.ic-pricing-calculate {
+  padding: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 22px rgba(193, 188, 188, 0.2); }
+  @media only screen and (max-width: 991.98px) {
+    .ic-pricing-calculate {
+      margin-top: 30px; } }
+
+.ms-pricing-main h3 {
+  padding-bottom: 20px; }
+.ms-pricing-main p {
+  padding-bottom: 10px; }
+
+.ms-cliping-path-drop-shadow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 30px; }
+  @media only screen and (max-width: 575.98px) {
+    .ms-cliping-path-drop-shadow {
+      flex-direction: column; } }
+  .ms-cliping-path-drop-shadow .ms-cliping-path-drop-items {
+    padding: 0 30px;
+    text-align: center; }
+    .ms-cliping-path-drop-shadow .ms-cliping-path-drop-items:nth-child(2) {
+      border-right: 1px solid #ddd;
+      border-left: 1px solid #ddd; }
+    .ms-cliping-path-drop-shadow .ms-cliping-path-drop-items p {
+      font-size: 12px; }
+    @media only screen and (max-width: 1199.98px) {
+      .ms-cliping-path-drop-shadow .ms-cliping-path-drop-items {
+        padding: 0 18px; } }
+    @media only screen and (max-width: 767.98px) {
+      .ms-cliping-path-drop-shadow .ms-cliping-path-drop-items {
+        padding: 0 5px; } }
+    @media only screen and (max-width: 575.98px) {
+      .ms-cliping-path-drop-shadow .ms-cliping-path-drop-items {
+        padding: 30px 0; }
+        .ms-cliping-path-drop-shadow .ms-cliping-path-drop-items:nth-child(2) {
+          border-top: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          border-right: 0;
+          border-left: 0; } }
+
 /*# sourceMappingURL=style.css.map */
